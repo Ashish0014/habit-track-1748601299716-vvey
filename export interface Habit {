@@ -1,0 +1,14 @@
+id: number;
+  name: string;
+  goal: number;
+}
+
+export interface FormValues {
+  name: string;
+  goal: number;
+}
+
+export type ApiResponse<T> = {
+  data: T;
+  error: Error | null;
+};
